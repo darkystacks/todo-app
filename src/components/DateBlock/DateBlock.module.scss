@@ -1,0 +1,14 @@
+.date {
+	color: #797979;
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: capitalize;
+
+	b {
+		color: var(--dark-text);
+		margin-right: 24px;
+
+		font-size: 25px;
+		font-weight: 800;
+	}
+}

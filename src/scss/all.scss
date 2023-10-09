@@ -1,0 +1,78 @@
+@import './normalize';
+
+.inputTitle {
+	background-color: transparent;
+	border: none;
+
+	color: var(--dark-text);
+	font-size: 18px;
+	font-weight: 600;
+	padding-bottom: 10px;
+}
+
+.inputBody {
+	background-color: transparent;
+	border: none;
+	width: 60%;
+	height: 50px;
+	padding-bottom: 25px;
+	resize: none;
+
+	color: var(--dark-text);
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.chooseColor {
+	display: flex;
+	max-width: fit-content;
+
+	@media (max-width: 520px) {
+		flex-direction: column;
+	}
+	color: #797979;
+	font-size: 16px;
+	font-weight: 400;
+
+	ul {
+		display: flex;
+		border-radius: 10px;
+		background-color: var(--choose-color-ul);
+		transition: all 0.2s ease-in-out;
+		margin-bottom: 15px;
+		color: var(--text-color);
+
+		li {
+			padding: 5px;
+			display: flex;
+			cursor: pointer;
+			transition: all 0.2s ease-in-out;
+
+			&:hover {
+				background-color: var(--task-hover);
+				border-radius: 10px;
+			}
+		}
+
+		&:has(> li:hover) {
+			background-color: transparent;
+		}
+		&:has(> .active) {
+			background-color: transparent;
+		}
+	}
+}
+
+.color {
+	border: 0.5px solid $gray;
+	width: 12px;
+	height: 12px;
+	border-radius: 100%;
+	margin-right: 5px;
+	margin-top: 4px;
+}
+
+.active {
+	background-color: var(--task-hover);
+	border-radius: 10px;
+}

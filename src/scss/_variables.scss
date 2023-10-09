@@ -1,0 +1,24 @@
+$black: #2e2e2e;
+$background: #f8f8f8;
+$gray: #a3a3a3;
+
+html {
+	--black: #2e2e2e;
+	--background: #f8f8f8;
+	--text-color: #797979;
+	--dark-text: #000;
+	--border: #a3a3a3;
+	--task-hover: #ebebeb;
+	--task-remove-hover: #c0bfbf;
+	--choose-color-ul: #ebebeb;
+}
+
+html[data-theme='dark'] {
+	--black: #232323;
+	--background: #2e2e2e;
+	--text-color: #f8f8f8;
+	--dark-text: #f8f8f8;
+	--task-hover: #232323;
+	--task-remove-hover: #121111;
+	--choose-color-ul: #424242;
+}

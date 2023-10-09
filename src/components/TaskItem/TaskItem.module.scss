@@ -1,0 +1,73 @@
+@import '../../scss/variables';
+
+.task {
+	width: 100%;
+	display: flex;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+	padding: 10px;
+	border-radius: 15px;
+
+	&:hover {
+		background-color: var(--task-hover);
+	}
+}
+
+.taskColor {
+	border: 0.5px solid #797979;
+	width: 12px;
+	height: 12px;
+	border-radius: 100%;
+	margin-right: 12px;
+	margin-top: 4px;
+}
+
+.taskWrapper {
+	width: calc(100% - 50px);
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	flex: 1;
+
+	h3 {
+		color: var(--text-color);
+		font-size: 18px;
+		font-weight: 600;
+
+		&::first-letter {
+			text-transform: uppercase;
+		}
+	}
+
+	span {
+		color: var(--text-color);
+		font-size: 16px;
+		font-weight: 400;
+
+		max-width: calc(100% - 100px);
+		max-height: 100px;
+		overflow: scroll;
+
+		&::first-letter {
+			text-transform: uppercase;
+		}
+	}
+}
+
+.remove {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-self: center;
+	width: 20px;
+	height: 20px;
+	padding: 15px;
+	border-radius: 5px;
+
+	background-color: var(--task-hover);
+	transition: all 0.2s ease-in-out;
+
+	&:hover {
+		background-color: var(--task-remove-hover);
+	}
+}

@@ -1,0 +1,32 @@
+.taskContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 35px 0;
+}
+
+.addTaskButton {
+	display: flex;
+	align-items: center;
+	max-width: fit-content;
+	padding: 10px 0;
+	gap: 10px;
+	cursor: pointer;
+
+	&,
+	svg,
+	svg path {
+		transition: all 0.2s ease-in-out;
+	}
+
+	&:hover {
+		transform: scale(110%);
+		svg path {
+			transform: rotate(8deg);
+		}
+	}
+}
+
+.loader {
+	margin: 100px auto;
+}

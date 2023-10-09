@@ -1,0 +1,27 @@
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 68px;
+	background-color: var(--black);
+
+	img {
+		width: 39px;
+		margin-left: 10%;
+	}
+
+	svg {
+		fill: none;
+		margin-right: 10%;
+		cursor: pointer;
+		transition: all 0.2s ease-in-out;
+
+		&:hover {
+			transform: rotate(-100deg);
+		}
+	}
+}
+
+.svgActive {
+	fill: #f8f8f8 !important;
+}

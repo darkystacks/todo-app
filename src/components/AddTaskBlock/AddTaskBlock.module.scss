@@ -1,0 +1,47 @@
+@import '../../scss/all';
+
+.formWrapper {
+	border: 1px solid #a3a3a3;
+	border-radius: 20px;
+	padding: 20px 24px 0 24px;
+}
+
+.addForm {
+	display: flex;
+	flex-direction: column;
+
+	max-height: 300px;
+}
+
+.submitBlock {
+	display: flex;
+	justify-content: flex-end;
+	gap: 20px;
+	padding: 20px 0;
+	border-top: 1px solid #ebebeb;
+
+	font-size: 16px;
+	font-weight: 400;
+
+	div {
+		padding: 5px 10px;
+		border-radius: 5px;
+		cursor: pointer;
+		transition: all 0.2s ease-in-out;
+
+		&:hover {
+			transform: translateY(-3px);
+			filter: drop-shadow(3px 3px 4px $gray);
+		}
+	}
+}
+
+.decline {
+	background-color: #ebebeb;
+	color: #2e2e2e;
+}
+
+.addTask {
+	background-color: #ff0d0d;
+	color: #f8f8f8;
+}
