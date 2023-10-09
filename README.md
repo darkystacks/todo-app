@@ -19,3 +19,21 @@
 - CSS-Modules / SCSS
 - uiball(loader)
 - Json-server (local db)
+
+# ⚡️️️️️️️ Try!:
+
+```
+# Clone repository.
+git clone https://github.com/darkystacks/todo-app
+
+# Move to the root.
+cd todo-app
+
+# Install packages
+npm i
+npm i -G json-server
+
+# Start the project
+json-server --watch db.json
+npm run dev
+```
